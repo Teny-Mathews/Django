@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Book Details</h1>
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>Title</label>
+        <input type="text" name="title">
+        <br>
+        <br>
+
+        <label>Author</label>
+        <input type="text" name="author">
+        <br>
+        <br>
+
+        <label>Price</label>
+        <input type="text" name="price">
+        <br>
+        <br>
+
+        <label>Language</label>
+        <input type="text" name="language">
+        <br>
+        <br>
+
+        <label>Pages</label>
+        <input type="text" name="pages">
+        <br>
+        <br>
+
+        <button>Submit</button>
+
+    </form>
+    
+</body>
+</html>
